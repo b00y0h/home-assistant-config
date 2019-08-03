@@ -1,0 +1,6 @@
+Outside Lights:
+  view: false
+  entities:
+    - light.back_flood_left
+    - light.front_porch_lights
+    - switch.garage_switch1

@@ -1,0 +1,12 @@
+# The Nest integration is the main integration to integrate
+# all Nest related platforms.
+# To connect Nest, you will have to sign up for a developer account
+# and get a client_id and client_secret.
+
+# https://www.home-assistant.io/components/nest/
+
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
+  structure:
+    - "Old Oaks"

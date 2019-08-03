@@ -1,0 +1,10 @@
+---
+# Adds an iframe panel to the Home Assistant frontend for the NodeRed add-on.
+# This allows me to access Node Red straight from Home Asssitant's UI
+#
+# https://www.home-assistant.io/components/panel_iframe/
+#
+nodered:
+  title: NodeRed
+  icon: mdi:car-esp
+  url: !secret panel_iframe_nodered_url

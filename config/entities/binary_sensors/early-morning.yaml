@@ -1,0 +1,5 @@
+platform: tod
+name: Early Morning
+after: sunrise
+after_offset: "-02:00"
+before: "07:00"

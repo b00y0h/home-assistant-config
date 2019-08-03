@@ -1,0 +1,7 @@
+Garage Door:
+    name: Garage Door
+    view: no
+    control: hidden
+    icon: mdi:garage
+    entities:
+      - cover.garage_door

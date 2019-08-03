@@ -1,0 +1,9 @@
+# The google_assistant integration allows you to control
+# things via Google Assistant (on your mobile or tablet)
+# or a Google Home device.
+
+# https://www.home-assistant.io/components/google_assistant/
+
+google_assistant:
+  project_id: home-assistant-7f181
+  api_key: AIzaSyAzhXTUgdMnLmy6T4ORAmlNgDy_HhCjOKM

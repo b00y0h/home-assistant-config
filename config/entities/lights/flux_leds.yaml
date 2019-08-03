@@ -1,0 +1,9 @@
+platform: flux_led
+automatic_add: true
+devices:
+  192.168.107.10:
+    name: "Emma Bed LED"
+  192.168.107.8:
+    name: "IV Bed LED"
+  192.168.107.18:
+    name: "Clayton Bed LED"

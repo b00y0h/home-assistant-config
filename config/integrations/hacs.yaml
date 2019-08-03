@@ -1,0 +1,8 @@
+---
+# Manage (Install, track, upgrade) and discover
+# custom elements for Home Assistant.
+#
+# https://custom-components.github.io/hacs/
+#
+# hacs:
+#   token: !secret hacs_access_token

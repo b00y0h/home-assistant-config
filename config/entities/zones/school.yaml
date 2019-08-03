@@ -1,0 +1,12 @@
+---
+#
+# Defines the School Zone
+#
+# https://www.home-assistant.io/components/zone/
+#
+name: school
+latitude: 37.579222
+longitude: -77.451237
+radius: 170
+passive: false
+icon: mdi:school

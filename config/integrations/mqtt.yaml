@@ -1,0 +1,7 @@
+#mqtt
+mqtt:
+  # broker: core-mosquitto
+  broker: !secret http_server_host
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  discovery: true

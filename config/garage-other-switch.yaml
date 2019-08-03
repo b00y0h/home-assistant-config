@@ -1,0 +1,8 @@
+# platform: mqtt
+# name: "Garage Other"
+# state_topic: "garage-light/stat/POWER2"
+# command_topic: "garage/cmnd/POWER1"
+# # command_topic: "garage-light/cmnd/POWER2"
+# payload_on: "on"
+# payload_off: "off"
+# retain: true

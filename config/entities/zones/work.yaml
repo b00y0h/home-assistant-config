@@ -1,0 +1,12 @@
+---
+#
+# Defines the Work Zone
+#
+# https://www.home-assistant.io/components/zone/
+#
+name: work
+latitude: 37.628636
+longitude: -77.673845
+radius: 760
+passive: false
+icon: mdi:briefcase

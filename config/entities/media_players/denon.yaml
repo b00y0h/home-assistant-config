@@ -1,0 +1,6 @@
+# https://www.home-assistant.io/components/denonavr/
+
+platform: denonavr
+host: 192.168.20.18
+name: Denon
+show_all_sources: true

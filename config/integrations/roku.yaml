@@ -1,0 +1,8 @@
+# The Roku integration allows integration of Roku,
+# which will be automatically discovered if you
+# enable the discovery component.
+
+# https://www.home-assistant.io/components/roku/
+
+roku:
+  - host: 192.168.107.25
