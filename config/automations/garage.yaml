@@ -1,0 +1,40 @@
+##########################################
+## Garage Door Automations              ##
+##########################################
+
+alias: 'Is the Garage door Open at night - Checks every 30 minutes or 5 minutes after we drive away.'
+hide_entity: True
+trigger:
+  - platform: time_pattern
+    minutes: '/30'
+  - platform: state
+    entity_id: group.family
+    from: home
+    to: not_home
+    for: 
+      minutes: 5
+
+condition:
+  condition: or
+  conditions:
+    - condition: and
+      conditions:
+        - condition: state
+          entity_id: group.family
+          state: not_home
+          for: 
+            minutes: 5
+        - condition: state
+          entity_id: cover.garage_door
+          state: open
+    - condition: and
+      conditions:
+        - condition: time
+          after: '22:00:00'
+        - condition: state
+          entity_id: cover.garage_door
+          state: open
+
+action:
+  - service: cover.close_cover
+    entity_id: cover.garage_door

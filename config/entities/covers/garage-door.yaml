@@ -7,4 +7,4 @@ payload_close: "ON"
 payload_stop: "ON"
 state_open: "OFF"
 state_closed: "ON"
-retain: true
+retain: false

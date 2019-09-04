@@ -4,6 +4,7 @@ services:
   homeassistant:
     image: homeassistant/home-assistant:latest
     container_name: "hass"
+    restart: always
     ports:
       - 8123:8123
     # network_mode: "service:vpn"

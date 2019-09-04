@@ -1,0 +1,21 @@
+- id: '1567565402786'
+  alias: New Automation
+  trigger:
+  - entity_id: group.family
+    for: 00:05:00
+    from: home
+    platform: state
+    to: not_home
+  - hours: ''
+    minutes: /45
+    platform: time_pattern
+    seconds: ''
+  condition:
+  - condition: state
+    entity_id: group.family
+    state: not_home
+  - condition: state
+    entity_id: cover.garage_door
+    state: open
+  action:
+  - service: cover.close_cover
