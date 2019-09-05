@@ -1,0 +1,23 @@
+###########################################################
+## Garage Door Automations Open Door When We Arrive      ##
+###########################################################
+
+alias: 'Open door when we arrive'
+hide_entity: True
+initial_state: True  # This makes sure that the automation is enabled after a HA Restart.
+trigger:
+  platform: state
+  entity_id: device_tracker.life360_alison
+  to: home
+  platform: state
+  entity_id: device_tracker.life360_bobby
+  to: home
+
+condition:
+  condition: state
+  entity_id: cover.garage_door
+  state: closed
+
+action:
+  service: cover.open_cover
+  entity_id: cover.garage_door
