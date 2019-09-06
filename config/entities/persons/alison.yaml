@@ -1,0 +1,6 @@
+---
+name: Alison
+id: alison
+user_id: !secret user_id_alison
+device_trackers:
+  - device_tracker.life360_alison

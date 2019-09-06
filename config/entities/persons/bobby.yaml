@@ -1,0 +1,6 @@
+---
+name: Bobby
+id: bobby
+user_id: !secret user_id_bobby
+device_trackers:
+  - device_tracker.life360_bobby

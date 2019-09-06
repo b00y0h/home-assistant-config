@@ -1,0 +1,22 @@
+##########################################
+## Lights on when Garage Door Opens     ##
+##########################################
+
+alias: 'Turn lights on when garage door opens at night'
+hide_entity: True
+trigger:
+  - platform: state
+    entity_id: cover.garage_door
+    to: open
+
+condition:
+  condition: and  # 'twilight' condition: dusk and dawn, in typical locations
+  conditions:
+    - condition: template
+      value_template: '{{ state_attr("sun.sun", "elevation") < 0 }}'
+    - condition: template
+      value_template: '{{ state_attr("sun.sun", "elevation") > -6 }}'
+
+action:
+  - service: light.turn_on
+    entity_id: light.back_flood_left
