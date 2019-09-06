@@ -4,14 +4,13 @@
 
 alias: 'Open door when we arrive'
 hide_entity: True
-initial_state: True  # This makes sure that the automation is enabled after a HA Restart.
 trigger:
-  platform: state
-  entity_id: device_tracker.life360_alison
-  to: home
-  platform: state
-  entity_id: device_tracker.life360_bobby
-  to: home
+  - platform: state
+    entity_id: device_tracker.life360_alison
+    to: 'home'
+  - platform: state
+    entity_id: device_tracker.life360_bobby
+    to: 'home'
 
 condition:
   condition: state

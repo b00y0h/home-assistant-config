@@ -9,7 +9,10 @@ trigger:
     entity_id: cover.garage_door
     to: 'open'
 
-condition: []
+condition:
+  condition: state  # from sunset until sunrise
+  entity_id: sun.sun
+  state: 'below_horizon'
 
 action:
   - service: light.turn_on
