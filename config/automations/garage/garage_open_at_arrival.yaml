@@ -11,6 +11,12 @@ trigger:
   - platform: state
     entity_id: device_tracker.life360_bobby
     to: 'home'
+  - platform: state
+    entity_id: device_tracker.life360_alison
+    to: 'Home'
+  - platform: state
+    entity_id: device_tracker.life360_bobby
+    to: 'Home'
 
 condition:
   condition: state
