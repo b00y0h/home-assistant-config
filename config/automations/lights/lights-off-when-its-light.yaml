@@ -1,0 +1,25 @@
+##########################################
+## Lights off when it's light             ##
+##########################################
+
+alias: 'Turn lights off when it gets light'
+hide_entity: True
+trigger:
+  - platform: time_pattern
+    minutes: '/15'
+
+condition:
+  - condition: state  # from sunset until sunrise
+    entity_id: sun.sun
+    state: 'above_horizon'
+  - condition: state
+    entity_id: group.outside_lights
+    state: 'on'
+  - condition: time
+    after: '05:00:00'
+    before: '10:00:00'
+
+action:
+  - service: homeassistant.turn_off
+    entity_id:
+    - group.outside_lights

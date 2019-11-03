@@ -1,0 +1,23 @@
+############################################
+## All outside lights ON with one switch  ##
+############################################
+
+alias: 'All outside lights ON with one switch'
+hide_entity: True
+trigger:
+  - platform: state
+    entity_id: switch.garage_switch1
+    to: 'on'
+  - platform: state
+    entity_id: light.back_flood_left
+    to: 'on'
+  - platform: state
+    entity_id: light.front_porch_lights_2
+    to: 'on'
+  - platform: state
+    entity_id: light.lights_driveway_near_road
+    to: 'on'
+    
+action:
+  - service: light.turn_on
+    entity_id: group.outside_lights

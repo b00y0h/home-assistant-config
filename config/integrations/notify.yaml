@@ -4,3 +4,7 @@ notify:
     vapid_pub_key: !secret notify_html5_api_key
     vapid_prv_key: !secret notify_html5_prv_key
     vapid_email: !secret notify_html5_email
+
+  - platform: pushbullet
+    name: pushbullet
+    api_key: !secret pushbullet_api_key

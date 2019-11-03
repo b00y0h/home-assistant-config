@@ -1,5 +1,5 @@
 platform: mqtt
-name: "Front Porch Lights"
+name: "Lights on Garage"
 state_topic: "shellies/shelly1-553AB6/relay/0"
 command_topic: "shellies/shelly1-553AB6/relay/0/command"
 payload_on: "on"

@@ -1,0 +1,8 @@
+notify_pushbullet:
+  sequence:
+    - service: notify.pushbullet
+      data:
+        title: 'Test Alert'
+        message: 'This is a test message'
+        data:
+          file_url: https://lh3.googleusercontent.com/Y7RXy25ZCVYJ7dRbEJkOeKsKSrxf4O9sAQoaKc6nbZia3QGgL7YLes2X0bdCFVu2RAysCsWiNw=w640-h400-e365

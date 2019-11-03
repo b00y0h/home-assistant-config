@@ -6,12 +6,12 @@
 *.pyc
 ._*
 __pycache__
+*@eaDir
 
 # Directory (contents) ignores
 config/.cloud
 config/.storage
 config/deps
-config/@eaDir
 
 # Specific file ignores
 config/.config_entries.json

@@ -2,5 +2,6 @@ Outside Lights:
   view: false
   entities:
     - light.back_flood_left
-    - light.front_porch_lights
+    - light.front_porch_lights_2
+    - light.lights_driveway_near_road
     # - switch.garage_switch1

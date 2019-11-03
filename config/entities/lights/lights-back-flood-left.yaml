@@ -1,5 +1,5 @@
 platform: mqtt
-name: "Back Flood Left"
+name: "Lights Back Flood Left"
 state_topic: "shellies/shelly1-2C0AE9/relay/0"
 command_topic: "shellies/shelly1-2C0AE9/relay/0/command"
 payload_on: "on"

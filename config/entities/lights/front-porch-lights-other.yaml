@@ -1,8 +1,8 @@
-platform: mqtt
-name: "Garage Other"
-state_topic: "garage-light/stat/POWER2"
-command_topic: "garage-light/cmnd/POWER2"
-payload_on: "on"
-payload_off: "off"
-retain: false
-unique_id: 553AB2346 #mac address minus alpha
+# platform: mqtt
+# name: "Garage Other"
+# state_topic: "garage-light/stat/POWER2"
+# command_topic: "garage-light/cmnd/POWER2"
+# payload_on: "on"
+# payload_off: "off"
+# retain: false
+# unique_id: 553AB2346 #mac address minus alpha
