@@ -2,26 +2,24 @@
 ## Lights on when it's dark             ##
 ##########################################
 
-alias: 'Turn lights on when it gets dark'
+alias: "Turn lights on when it gets dark"
 hide_entity: True
 trigger:
   - platform: time_pattern
-    minutes: '/15'
+    minutes: "/15"
 
 condition:
-  - condition: state  # from sunset until sunrise
+  - condition: state # from sunset until sunrise
     entity_id: sun.sun
-    state: 'below_horizon'
+    state: "below_horizon"
   - condition: state
     entity_id: group.outside_lights
-    state: 'off'
+    state: "off"
   - condition: time
-    after: '17:00:00'
-    before: '21:00:00'
-
-
+    after: "17:00:00"
+    before: "21:00:00"
 
 action:
   - service: homeassistant.turn_on
     entity_id:
-    - group.outside_lights
+      - group.outside_lights

@@ -1,5 +1,0 @@
-'1567886852483':
-  alias: New Script
-  sequence:
-  - data: {}
-    service: light.turn_on

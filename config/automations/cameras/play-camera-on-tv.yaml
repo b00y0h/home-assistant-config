@@ -1,0 +1,14 @@
+alias: 'Camera Stream with Motion'
+trigger:
+  # - platform: state
+  #   entity_id: switch.garage_switch1, light.back_flood_left, light.front_porch_lights_2, light.lights_driveway_near_road
+  #   to: "on"
+action:
+  # - service: camera.play_stream
+  #   data:
+  #     entity_id: camera.front_porch
+  #     media_player: media_player.plex_55_tcl_roku_tv
+  - service: media_player.select_source
+    data:
+      entity_id: media_player.plex_55_tcl_roku_tv
+      source: 13535

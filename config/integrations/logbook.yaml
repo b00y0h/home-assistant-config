@@ -8,4 +8,7 @@
 logbook:
   exclude:
     entities:
-      cover.garage_door
+      - cover.garage_door
+      - binary_sensor.emmabedsidelight_button
+      # - weather.dark_sky
+      - group.outside_lights

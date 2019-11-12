@@ -1,0 +1,14 @@
+alias: Turn off outside lights 45 minutes after trigger after midnight
+trigger:
+  entity_id: group.outside_lights
+  platform: state
+  to: "on"
+  for:
+    minutes: "45"
+condition:
+  condition: time
+  after: "22:30"
+  before: "04:30"
+action:
+  - service: homeassistant.turn_off
+    entity_id: group.outside_lights

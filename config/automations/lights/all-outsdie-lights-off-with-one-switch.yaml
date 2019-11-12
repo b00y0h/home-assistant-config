@@ -2,22 +2,13 @@
 ## All outside lights OFF with one switch  ##
 ############################################
 
-alias: 'All outside lights OFF with one switch'
+alias: "All outside lights OFF with one switch"
 hide_entity: True
 trigger:
   - platform: state
-    entity_id: switch.garage_switch1
-    to: 'off'
-  - platform: state
-    entity_id: light.back_flood_left
-    to: 'off'
-  - platform: state
-    entity_id: light.front_porch_lights_2
-    to: 'off'
-  - platform: state
-    entity_id: light.lights_driveway_near_road
-    to: 'off'
+    entity_id: switch.garage_switch1, light.back_flood_left, light.front_porch_lights_2, light.lights_driveway_near_road
+    to: "off"
 
 action:
-  - service: light.turn_off
+  - service: homeassistant.turn_off
     entity_id: group.outside_lights

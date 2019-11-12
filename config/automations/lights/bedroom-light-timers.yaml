@@ -2,28 +2,16 @@
 ## Turn lights off if after being on for 30 minutes  ##
 #######################################################
 
-alias: 'Turn LEDs off after 30 minutes'
+alias: "Turn LEDs off after 30 minutes"
 trigger:
   - platform: state
-    entity_id: light.clayton_bed_led
-    to: 'on'
+    entity_id: light.clayton_bed_led, light.emma_bed_led, light.iv_bed_led
+    to: "on"
     for:
       minutes: 30
-  - platform: state
-    entity_id: light.emma_bed_led
-    to: 'on'
-    for:
-      minutes: 30
-  - platform: state
-    entity_id: light.iv_bed_led
-    to: 'on'
-    for:
-      minutes: 30
-
-condition: []
 
 action:
   service: light.turn_off
   data_template:
-        # Whichever entity triggers the automation we want to turn off THAT entity, not the others.
-        entity_id: "{{ trigger.entity_id }}"
+    # Whichever entity triggers the automation we want to turn off THAT entity, not the others.
+    entity_id: "{{ trigger.entity_id }}"

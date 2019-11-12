@@ -1,0 +1,16 @@
+alias: Inside lights off during the daytime
+trigger:
+  entity_id: light.bobby_bedside_light, light.emma_bedside_light, light.alibedsidelight
+  platform: state
+  to: "on"
+  for:
+    minutes: "30"
+condition:
+  - condition: state # from sunset until sunrise
+    entity_id: sun.sun
+    state: "above_horizon"
+action:
+  service: light.turn_off
+  data_template:
+    # Whichever entity triggers the automation we want to turn off THAT entity, not the others.
+    entity_id: "{{ trigger.entity_id }}"

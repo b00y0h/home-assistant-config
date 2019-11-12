@@ -1,0 +1,14 @@
+##########################################
+## Outside off at midnight             ##
+##########################################
+
+alias: "Outside lights off at midnight"
+hide_entity: True
+trigger:
+  - platform: time
+    at: "00:00:00"
+
+action:
+  - service: homeassistant.turn_off
+    entity_id:
+      - group.outside_lights
