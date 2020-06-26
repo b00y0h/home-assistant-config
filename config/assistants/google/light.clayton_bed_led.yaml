@@ -1,0 +1,13 @@
+---
+# Entity configuration for Google Assistant.
+#
+# I use this to customize how the device shows up in Google Assistant.
+#
+# https://www.home-assistant.io/integrations/google_assistant/#entity_config
+#
+light.clayton_bed_led:
+  name: Clayton LED Light
+  aliases:
+    - led light Clayton
+    - Clayton's led light
+  room: Bedroom Clayton

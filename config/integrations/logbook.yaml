@@ -12,3 +12,20 @@ logbook:
       - binary_sensor.emmabedsidelight_button
       # - weather.dark_sky
       - group.outside_lights
+      - light.garage_side_light_blue_led
+      - light.sonoff_t1_2_gang_blue_led
+      - binary_sensor.sonoff_t1_2_gang_status
+      - binary_sensor.garage_side_light_touchpad_2
+      - binary_sensor.garage_side_light_touchpad_1
+      - binary_sensor.sonoff_t1_2_gang_touchpad_1
+      - binary_sensor.sonoff_t1_2_gang_status
+      - sensor.garage_side_light_bssid
+      - sensor.garage_side_light_ssid
+      - sensor.garage_side_light_ip
+      - sensor.garage_side_light_esphome_version
+      - switch.garage_side_light_relay_2
+      - switch.garage_side_light_relay_1
+      - switch.sonoff_t1_2_gang_relay_2
+      - switch.sonoff_t1_2_gang_relay_1
+      - binary_sensor.garage_side_light_gang_status
+      - binary_sensor.sonoff_t1_2_gang_touchpad_2

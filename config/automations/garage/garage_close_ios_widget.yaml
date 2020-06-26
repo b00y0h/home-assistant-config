@@ -1,0 +1,10 @@
+alias: "Action Close/Open Garage Door"
+initial_state: true
+trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: 'OpenClose Garage Door'
+action:
+  - service: cover.close_cover
+    entity_id: cover.garage_door

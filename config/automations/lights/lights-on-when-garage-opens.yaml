@@ -3,7 +3,6 @@
 ##########################################
 
 alias: 'Turn lights on when garage door opens at night'
-hide_entity: True
 trigger:
   - platform: state
     entity_id: cover.garage_door

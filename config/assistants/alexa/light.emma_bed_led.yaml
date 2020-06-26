@@ -1,0 +1,11 @@
+---
+# Entity configuration for Google Assistant.
+#
+# I use this to customize how the device shows up in Google Assistant.
+#
+# https://www.home-assistant.io/integrations/google_assistant/#entity_config
+#
+light.emma_bed_led:
+  name: Emma LED Light
+  description: LEDs under Emma bed
+  display_categories: LIGHT

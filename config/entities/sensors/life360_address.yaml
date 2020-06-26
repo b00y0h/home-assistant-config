@@ -1,0 +1,29 @@
+platform: template
+sensors:
+  life360_bobby_phone_place:
+    value_template: >-
+      {% set tracker_name = "life360_bobby"%}
+      {% if states("device_tracker." + tracker_name) != "unknown" %}
+        {{ state_attr("device_tracker." + tracker_name, "address")}}
+      {% else %}
+        ??
+      {% endif %}
+    friendly_name: Bobby Address
+  life360_alison_phone_place:
+    value_template: >-
+      {% set tracker_name = "life360_alison"%}
+      {% if states("device_tracker." + tracker_name) != "unknown" %}
+        {{ state_attr("device_tracker." + tracker_name, "address")}}
+      {% else %}
+        ??
+      {% endif %}
+    friendly_name: Ali Address
+  life360_mom_phone_place:
+    value_template: >-
+      {% set tracker_name = "life360_mom"%}
+      {% if states("device_tracker." + tracker_name) != "unknown" %}
+        {{ state_attr("device_tracker." + tracker_name, "address")}}
+      {% else %}
+        ??
+      {% endif %}
+    friendly_name: Mom Address

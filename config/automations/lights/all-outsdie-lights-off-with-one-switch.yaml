@@ -3,10 +3,9 @@
 ############################################
 
 alias: "All outside lights OFF with one switch"
-hide_entity: True
 trigger:
   - platform: state
-    entity_id: switch.garage_switch1, light.back_flood_left, light.front_porch_lights_2, light.lights_driveway_near_road
+    entity_id: switch.garage_side_light_relay_1, light.back_flood_left, light.front_porch_lights_2, light.lights_driveway_near_road
     to: "off"
 
 action:

@@ -3,7 +3,6 @@
 ##########################################
 
 alias: "Turn lights on when it gets dark"
-hide_entity: True
 trigger:
   - platform: time_pattern
     minutes: "/15"

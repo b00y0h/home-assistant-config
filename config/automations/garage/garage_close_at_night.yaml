@@ -3,7 +3,6 @@
 ##########################################
 
 alias: 'Is the Garage door Open at night - Checks every 30 minutes.'
-hide_entity: True
 trigger:
   - platform: time_pattern
     minutes: '/15'
@@ -18,3 +17,7 @@ condition:
 action:
   - service: cover.close_cover
     entity_id: cover.garage_door
+  - service: tts.google_translate_say
+    data:
+      entity_id: media_player.master_display
+      message: "The garage door is open"

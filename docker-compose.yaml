@@ -3,22 +3,23 @@ version: '2.1'
 services:
   homeassistant:
     image: homeassistant/home-assistant:latest
-    container_name: "hass"
+    container_name: home_assistant
     restart: always
     ports:
       - 8123:8123
+      - 51827:51827
     # network_mode: "service:vpn"
-    # network_mode: host
+    network_mode: host
     # depends_on: # moved to parent docker-compose file
     #   vpn:
     #     condition: service_started    
     #   mqtt:
     #     condition: service_started
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://192.168.1.2:8123"]
-      interval: 30s
-      timeout: 10s
-      retries: 6
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://192.168.1.2:8123"]
+    #   interval: 30s
+    #   timeout: 10s
+    #   retries: 6
     volumes:
       - ./config:/config
     environment:

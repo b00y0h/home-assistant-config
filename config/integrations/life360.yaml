@@ -2,10 +2,6 @@ life360:
   accounts:
       - username: !secret life360_username
         password: !secret life360_password
-  members:
-    exclude:
-      - Mom
-      - mom
   # MPH, assuming imperial units.
   # If using metric (KPH), the equivalent would be 29.
   driving_speed: 18
@@ -19,5 +15,6 @@ life360:
   # Set comm error thresholds so first is not logged,
   # second is logged as a WARNING, and third and fourth
   # are logged as ERRORs.
-  # warning_threshold: 2
-  # error_threshold: 3
+  warning_threshold: 2
+  error_threshold: 3
+

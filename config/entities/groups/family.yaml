@@ -4,3 +4,4 @@ Family:
   entities:
     - device_tracker.life360_alison
     - device_tracker.life360_bobby
+    - device_tracker.life360_mom

@@ -6,4 +6,10 @@
 
 google_assistant:
   project_id: home-assistant-7f181
-  api_key: AIzaSyAzhXTUgdMnLmy6T4ORAmlNgDy_HhCjOKM
+  service_account: !include service_account.json
+  report_state: true
+  exposed_domains:
+    - switch
+    - light
+    - cover
+  entity_config: !include_dir_merge_named ../assistants/google

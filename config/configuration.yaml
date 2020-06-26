@@ -48,6 +48,6 @@ stream:
 camera:
   - platform: generic
     name: Front Porch
-    still_image_url: http://192.168.1.31/snap.jpeg
-    stream_source: rtsp://192.168.1.24:7447/FJf1VJfZrIYRDmCr
+    still_image_url: http://192.168.10.31/snap.jpeg
+    stream_source: rtsp://192.168.1.24:7447/RM3id9spMoyQUeWJ
     verify_ssl: false

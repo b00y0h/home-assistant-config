@@ -3,7 +3,6 @@
 ###########################################################
 
 alias: 'Open door when we arrive'
-hide_entity: True
 trigger:
   - platform: state
     entity_id: device_tracker.life360_alison

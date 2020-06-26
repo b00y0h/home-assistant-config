@@ -1,0 +1,6 @@
+---
+name: Mom
+id: !secret user_id_mom
+user_id: !secret user_id_mom
+device_trackers:
+  - device_tracker.life360_mom

@@ -1,0 +1,6 @@
+Indoor Lights:
+  name: Indoor Lights
+  view: false
+  entities:
+    - light.livingroomlight1
+    - group.bedroom_lights

@@ -3,7 +3,6 @@
 ##########################################
 
 alias: 'Is the Garage door Open while away? - Checks every 5 minutes after we drive away.'
-hide_entity: True
 trigger:
   - platform: state
     entity_id: group.family

@@ -1,0 +1,17 @@
+---
+# Entity configuration for Google Assistant.
+#
+# I use this to customize how the device shows up in Google Assistant.
+#
+# https://www.home-assistant.io/integrations/google_assistant/#entity_config
+#
+light.alison_bedside_light:
+  name: Alison bedside Light
+  aliases:
+    - Alison's bedside light
+    - bedside light Alison
+    - bed lamp Alison
+    - Alison's bedside light
+    - Alison's night light
+    - night light Alison
+  room: Master
