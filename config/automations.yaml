@@ -1,0 +1,182 @@
+- id: '1631414507675'
+  alias: IOS widget open/close garage door
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: openCloseGarageDoor
+  condition: []
+  action:
+  - service: cover.open_cover
+    target:
+      entity_id: cover.garage_door
+  mode: single
+- id: '1637262215395'
+  alias: turn off media access when Ali or Bobby away
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.upstairs_roku_uptime
+    from: 00:00:10
+  condition:
+  - condition: device
+    device_id: 4e103e4055f70716179f453c54bf0245
+    domain: device_tracker
+    entity_id: device_tracker.daddios_iphone
+    type: is_not_home
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id:
+      - switch.basementroku
+      - switch.upstairs_roku
+      - switch.xboxone
+  mode: single
+- id: '1637273261039'
+  alias: '[UI] Check of garage door open for 30 minutes'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: cover.garage_door
+    to: open
+    for:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.garage_door_is_open
+  condition:
+  - condition: state
+    entity_id: cover.garage_door
+    state: open
+  action:
+  - service: script.activate_alexa_actionable_notification
+    data:
+      text: Garage door has been open for more than 30 minutes. Would you like to
+        shut it?
+      event_id: alexa_notification_garage_door_open
+      alexa_device: media_player.office
+  - service: timer.start
+    target:
+      entity_id: timer.garage_door_is_open
+    data:
+      duration: '0'
+  - service: notify.mobile_app_daddios_iphone
+    data:
+      message: Garage door has been open for more than 30 minutes
+      title: Garage Door Open
+      data:
+        actions:
+        - action: CLOSE_GARAGE
+          title: Close Garage
+          icon: sfsymbols:bell
+  - wait_for_trigger:
+    - platform: event
+      event_type: mobile_app_notification_action
+      event_data:
+        action: CLOSE_GARAGE
+    timeout: 00:00:30
+    continue_on_timeout: false
+  - service: cover.close_cover
+    target:
+      entity_id: cover.garage_door
+  - wait_for_trigger:
+    - platform: state
+      entity_id: cover.garage_door
+      to: closed
+  - service: notify.mobile_app_daddios_iphone
+    data:
+      message: Garage was closed
+      title: Garage Notification
+  mode: single
+- id: '1637352453737'
+  alias: '[UI] Garage door has been opened'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: cover.garage_door
+    to: open
+  condition: []
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.doorbell
+  mode: single
+- id: '1637604045455'
+  alias: Announce when Dad, Mom or IV are home
+  description: ''
+  trigger:
+  - platform: zone
+    entity_id: person.alison
+    zone: zone.home
+    event: enter
+  - platform: zone
+    entity_id: person.bobby_2
+    zone: zone.home
+    event: enter
+  - platform: zone
+    entity_id: person.iv_2
+    zone: zone.home
+    event: enter
+  condition: []
+  action:
+  - service: notify.alexa_media_bobby_s_echo_show
+    data:
+      message: Who hoo! Someone's home
+      data:
+        type: tts
+  mode: single
+- id: '1638544302494'
+  alias: '[UI] Actionable Notification - Garage left open for 30 minutes'
+  trigger:
+  - platform: state
+    entity_id: cover.garage_door
+    to: open
+    for:
+      minutes: 30
+  condition:
+  - condition: state
+    entity_id: cover.garage_door
+    state: open
+  action:
+  - service: script.activate_alexa_actionable_notification
+    data:
+      text: Garage door has been open for more than 30 mintues. Would you like to
+        shut it?
+      event_id: alexa_notification_garage_door_open
+      alexa_device: media_player.office
+- id: '1638546471995'
+  alias: '[UI] Actionable response - Respond to garage door being open'
+  description: ''
+  trigger:
+  - platform: event
+    event_type: alexa_actionable_notification
+    event_data:
+      event_id: alexa_notification_garage_door_open
+      event_response_type: ResponseYes
+  condition: []
+  action:
+  - service: cover.close_cover
+    target:
+      entity_id: cover.garage_door
+  mode: single
+- id: '1663944427331'
+  alias: Close door at night time
+  description: ''
+  trigger:
+  - platform: time
+    at: '22:00:00'
+  condition:
+  - condition: state
+    entity_id: cover.garage_door
+    state: open
+  action:
+  - service: cover.toggle
+    data: {}
+    target:
+      entity_id: cover.garage_door
+  mode: single

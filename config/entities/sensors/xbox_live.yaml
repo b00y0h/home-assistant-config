@@ -1,0 +1,7 @@
+# https://www.youtube.com/watch?v=UyXq0N_Y_XY
+# this is being removed from future versions of home assistant
+
+# platform: xbox_live
+# api_key: !secret xbox_live_api_key
+# xuid:
+#   - 'ux bob' #dad

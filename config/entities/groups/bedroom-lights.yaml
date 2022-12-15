@@ -1,6 +1,5 @@
 Bedroom Lights:
   name: Bedroom Lights
-  view: false
   entities:
     - light.bobby_bedside_light
     - light.emma_bedside_light

@@ -1,0 +1,6 @@
+Basement Lights:
+  name: Basement Lights
+  entities:
+    - light.theater_main_back
+    - light.theater_theater_area
+    - light.elgato_key_light_air

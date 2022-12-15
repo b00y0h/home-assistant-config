@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# in case we have turned on the lights manually.
+#
+# https://www.home-assistant.io/components/input_boolean/
+# #
+# on_by_automation:
+#   name: Lights on by automation
+#   initial: false
+#   icon: mdi:lightbulb-on

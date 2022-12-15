@@ -1,7 +1,6 @@
 Family:
   name: Family
-  view: false
   entities:
     - device_tracker.life360_alison
     - device_tracker.life360_bobby
-    - device_tracker.life360_mom
+    - device_tracker.life360_iv_smith

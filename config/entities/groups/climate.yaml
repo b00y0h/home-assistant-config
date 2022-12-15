@@ -1,6 +1,5 @@
 Climate:
   name: Climate
-  view: false
   entities:
     - sensor.downstairs_thermostat_temperature
     - sensor.upstairs_thermostat_temperature

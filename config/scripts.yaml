@@ -1,0 +1,19 @@
+doorbell:
+  sequence:
+  - service: media_player.volume_set
+    target:
+      entity_id:
+      - media_player.everywhere
+    data:
+      volume_level: 0.53
+  - service: notify.alexa_media
+    data:
+      message: <audio src="soundbank://soundlibrary/home/amzn_sfx_doorbell_chime_01"
+        />Garage door has been opened.
+      data:
+        type: tts
+      target:
+      - media_player.office
+      - media_player.kitchen
+  mode: single
+  alias: announce garage door open

@@ -1,0 +1,1407 @@
+{
+    "version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.alison",
+                "state": "not_home",
+                "attributes": {
+                    "editable": true,
+                    "id": "231378fbc5f247999e06013f14e03893",
+                    "latitude": 37.640773,
+                    "longitude": -77.555586,
+                    "gps_accuracy": 15,
+                    "source": "device_tracker.life360_alison",
+                    "user_id": "231378fbc5f247999e06013f14e03893",
+                    "friendly_name": "Alison"
+                },
+                "last_changed": "2021-11-18T20:44:09.989801+00:00",
+                "last_updated": "2021-11-18T21:27:30.265464+00:00",
+                "context": {
+                    "id": "1485455e72d17b35fc1f25c69db747e3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "person.bobby_2",
+                "state": "home",
+                "attributes": {
+                    "editable": true,
+                    "id": "354412de159348839af80d09c20e186e",
+                    "latitude": 37.639911,
+                    "longitude": -77.799371,
+                    "gps_accuracy": 15,
+                    "source": "device_tracker.life360_bobby",
+                    "user_id": "354412de159348839af80d09c20e186e",
+                    "friendly_name": "Bobby"
+                },
+                "last_changed": "2021-11-18T19:33:08.222557+00:00",
+                "last_updated": "2021-11-18T19:33:51.142466+00:00",
+                "context": {
+                    "id": "b61d50deaaea1fe492b82dcaf2dbf7fa",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "person.iv_2",
+                "state": "driving",
+                "attributes": {
+                    "editable": true,
+                    "id": "3472ae70a6364e169398ceb1a40e34c0",
+                    "latitude": 37.599519,
+                    "longitude": -77.514231,
+                    "gps_accuracy": 15,
+                    "source": "device_tracker.life360_iv_smith",
+                    "user_id": "3472ae70a6364e169398ceb1a40e34c0",
+                    "friendly_name": "IV"
+                },
+                "last_changed": "2021-11-18T21:33:20.308332+00:00",
+                "last_updated": "2021-11-18T21:33:20.308332+00:00",
+                "context": {
+                    "id": "87dbfd4c006a63ffbfcb6d595c3a04d8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.back_flood_left",
+                "state": "off",
+                "attributes": {
+                    "supported_color_modes": [
+                        "onoff"
+                    ],
+                    "friendly_name": "Lights Back Flood Left",
+                    "supported_features": 0
+                },
+                "last_changed": "2021-11-18T19:33:18.848125+00:00",
+                "last_updated": "2021-11-18T19:33:18.848125+00:00",
+                "context": {
+                    "id": "071f1f0f9babf7c8088986cf0ed81ba2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_activity",
+                "state": "Stationary",
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Stationary"
+                    ],
+                    "friendly_name": "daddio\u2019s iPhone Activity",
+                    "icon": "mdi:human-male"
+                },
+                "last_changed": "2021-11-18T19:33:18.940434+00:00",
+                "last_updated": "2021-11-18T19:33:18.940434+00:00",
+                "context": {
+                    "id": "3838d51a63bb182ee82466e75cb0cbeb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_distance",
+                "state": "522",
+                "attributes": {
+                    "unit_of_measurement": "m",
+                    "friendly_name": "daddio\u2019s iPhone Distance",
+                    "icon": "mdi:hiking"
+                },
+                "last_changed": "2021-11-18T19:33:18.940722+00:00",
+                "last_updated": "2021-11-18T19:33:18.940722+00:00",
+                "context": {
+                    "id": "87af3934e6b89f0e9d70329cc1604525",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_floors_ascended",
+                "state": "3",
+                "attributes": {
+                    "unit_of_measurement": "floors",
+                    "friendly_name": "daddio\u2019s iPhone Floors Ascended",
+                    "icon": "mdi:stairs-up"
+                },
+                "last_changed": "2021-11-18T19:33:18.940932+00:00",
+                "last_updated": "2021-11-18T19:33:18.940932+00:00",
+                "context": {
+                    "id": "f70ee4e9d63dadd941b6b8329b896024",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_floors_descended",
+                "state": "4",
+                "attributes": {
+                    "unit_of_measurement": "floors",
+                    "friendly_name": "daddio\u2019s iPhone Floors Descended",
+                    "icon": "mdi:stairs-down"
+                },
+                "last_changed": "2021-11-18T19:33:18.941228+00:00",
+                "last_updated": "2021-11-18T19:33:18.941228+00:00",
+                "context": {
+                    "id": "71755f5320bd18716f1dff9f778bc054",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_steps",
+                "state": "762",
+                "attributes": {
+                    "unit_of_measurement": "steps",
+                    "friendly_name": "daddio\u2019s iPhone Steps",
+                    "icon": "mdi:walk"
+                },
+                "last_changed": "2021-11-18T19:33:18.941444+00:00",
+                "last_updated": "2021-11-18T19:33:18.941444+00:00",
+                "context": {
+                    "id": "3bb54493fd0897eef96f920d4022bc95",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_average_active_pace",
+                "state": "2",
+                "attributes": {
+                    "unit_of_measurement": "m/s",
+                    "friendly_name": "daddio\u2019s iPhone Average Active Pace",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2021-11-18T19:33:18.941643+00:00",
+                "last_updated": "2021-11-18T19:33:18.941643+00:00",
+                "context": {
+                    "id": "95943b31e816f4c0958b51dac20a6204",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_battery_level",
+                "state": "40",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "daddio\u2019s iPhone Battery Level",
+                    "icon": "mdi:battery-40",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-11-18T20:53:54.682285+00:00",
+                "last_updated": "2021-11-18T20:53:54.682285+00:00",
+                "context": {
+                    "id": "52b770d5f51353ba4013c7523799ac4c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_battery_state",
+                "state": "Not Charging",
+                "attributes": {
+                    "Low Power Mode": false,
+                    "friendly_name": "daddio\u2019s iPhone Battery State",
+                    "icon": "mdi:battery-40"
+                },
+                "last_changed": "2021-11-18T19:33:18.942058+00:00",
+                "last_updated": "2021-11-18T19:33:18.942058+00:00",
+                "context": {
+                    "id": "45148170bd24c0182d2aa38c50918f0e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_storage",
+                "state": "67.93",
+                "attributes": {
+                    "Available": "84.18 GB",
+                    "Available (Important)": "255.00 GB",
+                    "Available (Opportunistic)": "173.82 GB",
+                    "Total": "255.88 GB",
+                    "unit_of_measurement": "% available",
+                    "friendly_name": "daddio\u2019s iPhone Storage",
+                    "icon": "mdi:database"
+                },
+                "last_changed": "2021-11-18T20:53:54.682782+00:00",
+                "last_updated": "2021-11-18T20:53:54.682782+00:00",
+                "context": {
+                    "id": "3ffd4ca98ab4dd38555e3bfdc23be2c3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_ssid",
+                "state": "o==[]:::::::::::::::::::::::::>",
+                "attributes": {
+                    "friendly_name": "daddio\u2019s iPhone SSID",
+                    "icon": "mdi:wifi"
+                },
+                "last_changed": "2021-11-18T19:33:18.942463+00:00",
+                "last_updated": "2021-11-18T19:33:18.942463+00:00",
+                "context": {
+                    "id": "ff0ba5707a7186c0cd7fadbae83164cb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_bssid",
+                "state": "22:e8:29:52:6e:c9",
+                "attributes": {
+                    "friendly_name": "daddio\u2019s iPhone BSSID",
+                    "icon": "mdi:wifi-star"
+                },
+                "last_changed": "2021-11-18T20:53:54.684598+00:00",
+                "last_updated": "2021-11-18T20:53:54.684598+00:00",
+                "context": {
+                    "id": "dbe0be400f84bbdd8c4ad132b75b29c3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_connection_type",
+                "state": "Wi-Fi",
+                "attributes": {
+                    "friendly_name": "daddio\u2019s iPhone Connection Type",
+                    "icon": "mdi:wifi"
+                },
+                "last_changed": "2021-11-18T19:33:18.942853+00:00",
+                "last_updated": "2021-11-18T19:33:18.942853+00:00",
+                "context": {
+                    "id": "7f0df25aa7177ce7385fc9d03042bfd1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_sim_2",
+                "state": "N/A",
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000002",
+                    "Carrier Name": "N/A",
+                    "ISO Country Code": "N/A",
+                    "Mobile Country Code": "N/A",
+                    "Mobile Network Code": "N/A",
+                    "friendly_name": "daddio\u2019s iPhone SIM 2",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-11-18T19:33:18.943113+00:00",
+                "last_updated": "2021-11-18T19:33:18.943113+00:00",
+                "context": {
+                    "id": "92c18f9cf0919c3f3d5d7d7eb8380e29",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_sim_1",
+                "state": "Verizon",
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "Verizon",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "us",
+                    "Mobile Country Code": "311",
+                    "Mobile Network Code": "480",
+                    "friendly_name": "daddio\u2019s iPhone SIM 1",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-11-18T19:33:18.943328+00:00",
+                "last_updated": "2021-11-18T19:33:18.943328+00:00",
+                "context": {
+                    "id": "964c9f09e262b7628c89d72a354d85a6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_last_update_trigger",
+                "state": "Launch",
+                "attributes": {
+                    "friendly_name": "daddio\u2019s iPhone Last Update Trigger",
+                    "icon": "mdi:cellphone-wireless"
+                },
+                "last_changed": "2021-11-18T20:53:54.685702+00:00",
+                "last_updated": "2021-11-18T20:53:54.685702+00:00",
+                "context": {
+                    "id": "728224cd447bfe48537451f1f4a5c6a1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.daddios_iphone_geocoded_location",
+                "state": "1462 Old Oaks Ln\nCrozier VA 23039\nUnited States",
+                "attributes": {
+                    "Administrative Area": "VA",
+                    "Areas Of Interest": "N/A",
+                    "Country": "United States",
+                    "Inland Water": "N/A",
+                    "ISO Country Code": "US",
+                    "Locality": "Crozier",
+                    "Location": [
+                        37.639892578125,
+                        -77.7993709689371
+                    ],
+                    "Name": "1462 Old Oaks Ln",
+                    "Ocean": "N/A",
+                    "Postal Code": "23039",
+                    "Sub Administrative Area": "Goochland County",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "1462",
+                    "Thoroughfare": "Old Oaks Ln",
+                    "Time Zone": "America/New_York",
+                    "Zones": [
+                        "home"
+                    ],
+                    "friendly_name": "daddio\u2019s iPhone Geocoded Location",
+                    "icon": "mdi:map"
+                },
+                "last_changed": "2021-11-18T19:33:18.943729+00:00",
+                "last_updated": "2021-11-18T19:33:18.943729+00:00",
+                "context": {
+                    "id": "da3cb15d811b6a103fd1c294de42bcbc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.daddios_iphone_focus",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "daddio\u2019s iPhone Focus",
+                    "icon": "mdi:moon-waning-crescent"
+                },
+                "last_changed": "2021-11-18T19:33:18.943948+00:00",
+                "last_updated": "2021-11-18T19:33:18.943948+00:00",
+                "context": {
+                    "id": "f6bdd4087f6263c8615738a35dbf674e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_activity",
+                "state": "Automotive",
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Automotive"
+                    ],
+                    "friendly_name": "iPhone Activity",
+                    "icon": "mdi:car"
+                },
+                "last_changed": "2021-11-18T21:13:44.219302+00:00",
+                "last_updated": "2021-11-18T21:13:44.219302+00:00",
+                "context": {
+                    "id": "6c6195bfd40c2d12de7b148fe4bbf68d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_distance",
+                "state": "7687",
+                "attributes": {
+                    "unit_of_measurement": "m",
+                    "friendly_name": "iPhone Distance",
+                    "icon": "mdi:hiking"
+                },
+                "last_changed": "2021-11-18T21:25:07.972371+00:00",
+                "last_updated": "2021-11-18T21:25:07.972371+00:00",
+                "context": {
+                    "id": "7dcd3cf1205c5c917ae52408a93894cc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_floors_ascended",
+                "state": "8",
+                "attributes": {
+                    "unit_of_measurement": "floors",
+                    "friendly_name": "iPhone Floors Ascended",
+                    "icon": "mdi:stairs-up"
+                },
+                "last_changed": "2021-11-18T21:05:37.111870+00:00",
+                "last_updated": "2021-11-18T21:05:37.111870+00:00",
+                "context": {
+                    "id": "3286d64dc4ea55e521f9b246f2e3f934",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_floors_descended",
+                "state": "11",
+                "attributes": {
+                    "unit_of_measurement": "floors",
+                    "friendly_name": "iPhone Floors Descended",
+                    "icon": "mdi:stairs-down"
+                },
+                "last_changed": "2021-11-18T19:33:18.948104+00:00",
+                "last_updated": "2021-11-18T19:33:18.948104+00:00",
+                "context": {
+                    "id": "3f665be381a1b36d98d0b9421bfb2ef7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_steps",
+                "state": "12675",
+                "attributes": {
+                    "unit_of_measurement": "steps",
+                    "friendly_name": "iPhone Steps",
+                    "icon": "mdi:walk"
+                },
+                "last_changed": "2021-11-18T21:25:07.972884+00:00",
+                "last_updated": "2021-11-18T21:25:07.972884+00:00",
+                "context": {
+                    "id": "819e25b2099ed0838c094469bb822dc1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_average_active_pace",
+                "state": "1",
+                "attributes": {
+                    "unit_of_measurement": "m/s",
+                    "friendly_name": "iPhone Average Active Pace",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2021-11-18T19:33:18.948519+00:00",
+                "last_updated": "2021-11-18T19:33:18.948519+00:00",
+                "context": {
+                    "id": "5b533cace37cdcba4b00b2a413b1a2e5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_storage",
+                "state": "96.67",
+                "attributes": {
+                    "Available": "151.54 GB",
+                    "Available (Important)": "316.00 GB",
+                    "Available (Opportunistic)": "247.37 GB",
+                    "Total": "255.88 GB",
+                    "unit_of_measurement": "% available",
+                    "friendly_name": "iPhone Storage",
+                    "icon": "mdi:database"
+                },
+                "last_changed": "2021-11-18T21:30:05.923901+00:00",
+                "last_updated": "2021-11-18T21:30:05.923901+00:00",
+                "context": {
+                    "id": "6b185eb1ad26f2882b7256a21741f4b6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_ssid",
+                "state": "Not Connected",
+                "attributes": {
+                    "friendly_name": "iPhone SSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-11-18T19:33:18.948911+00:00",
+                "last_updated": "2021-11-18T19:33:18.948911+00:00",
+                "context": {
+                    "id": "b78e79352b90fd70f4457e927737df58",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_connection_type",
+                "state": "Cellular",
+                "attributes": {
+                    "Cellular Technology": "4G",
+                    "friendly_name": "iPhone Connection Type",
+                    "icon": "mdi:signal"
+                },
+                "last_changed": "2021-11-18T19:33:18.949153+00:00",
+                "last_updated": "2021-11-18T19:33:18.949153+00:00",
+                "context": {
+                    "id": "224ca0f1061685e2c16b55979119e1ea",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_battery_level",
+                "state": "30",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "iPhone Battery Level",
+                    "icon": "mdi:battery-30",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-11-18T21:30:05.923412+00:00",
+                "last_updated": "2021-11-18T21:30:05.923412+00:00",
+                "context": {
+                    "id": "09f05ecb38d83a1a400a2ba6a30cd292",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_battery_state",
+                "state": "Not Charging",
+                "attributes": {
+                    "Low Power Mode": true,
+                    "friendly_name": "iPhone Battery State",
+                    "icon": "mdi:battery-30"
+                },
+                "last_changed": "2021-11-18T19:33:18.949555+00:00",
+                "last_updated": "2021-11-18T21:05:37.113195+00:00",
+                "context": {
+                    "id": "30d182f87ffa99ebe7af54802dc30266",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_bssid",
+                "state": "Not Connected",
+                "attributes": {
+                    "friendly_name": "iPhone BSSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-11-18T19:33:18.949746+00:00",
+                "last_updated": "2021-11-18T19:33:18.949746+00:00",
+                "context": {
+                    "id": "c31755a5c67b214ae925518f7d13a24f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_sim_1",
+                "state": "Verizon",
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "Verizon",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "us",
+                    "Mobile Country Code": "311",
+                    "Mobile Network Code": "480",
+                    "friendly_name": "iPhone SIM 1",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-11-18T19:33:18.949941+00:00",
+                "last_updated": "2021-11-18T19:33:18.949941+00:00",
+                "context": {
+                    "id": "291dfe555b0dd89a520e186df59ec7d1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_sim_2",
+                "state": "N/A",
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000002",
+                    "Carrier Name": "N/A",
+                    "ISO Country Code": "N/A",
+                    "Mobile Country Code": "N/A",
+                    "Mobile Network Code": "N/A",
+                    "friendly_name": "iPhone SIM 2",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-11-18T19:33:18.950190+00:00",
+                "last_updated": "2021-11-18T19:33:18.950190+00:00",
+                "context": {
+                    "id": "dc36726f802d6f70b0e3fedb6550d384",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_geocoded_location",
+                "state": "Libbie Ave\nRichmond VA 23226\nUnited States",
+                "attributes": {
+                    "Administrative Area": "VA",
+                    "Areas Of Interest": "N/A",
+                    "Country": "United States",
+                    "Inland Water": "N/A",
+                    "ISO Country Code": "US",
+                    "Locality": "Richmond",
+                    "Location": [
+                        37.583984375,
+                        -77.50971296760092
+                    ],
+                    "Name": "Libbie Ave",
+                    "Ocean": "N/A",
+                    "Postal Code": "23226",
+                    "Sub Administrative Area": "Henrico County",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "N/A",
+                    "Thoroughfare": "Libbie Ave",
+                    "Time Zone": "America/New_York",
+                    "Zones": [],
+                    "friendly_name": "iPhone Geocoded Location",
+                    "icon": "mdi:map"
+                },
+                "last_changed": "2021-11-18T21:30:05.926787+00:00",
+                "last_updated": "2021-11-18T21:30:05.926787+00:00",
+                "context": {
+                    "id": "e01f949c43f3b3c5286c84f48ce81a3e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.iphone_last_update_trigger",
+                "state": "Siri",
+                "attributes": {
+                    "friendly_name": "iPhone Last Update Trigger",
+                    "icon": "mdi:cellphone-wireless"
+                },
+                "last_changed": "2021-11-18T19:33:18.950597+00:00",
+                "last_updated": "2021-11-18T19:33:18.950597+00:00",
+                "context": {
+                    "id": "96316a6c7b6645ed8b878a63c452e0d8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.iphone_focus",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "iPhone Focus",
+                    "icon": "mdi:moon-waning-crescent"
+                },
+                "last_changed": "2021-11-18T21:30:05.925114+00:00",
+                "last_updated": "2021-11-18T21:30:05.925114+00:00",
+                "context": {
+                    "id": "2b51310798247b70e717ad6e03b3df02",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.lights_driveway_near_road",
+                "state": "off",
+                "attributes": {
+                    "supported_color_modes": [
+                        "onoff"
+                    ],
+                    "friendly_name": "Lights Driveway Near Road",
+                    "supported_features": 0
+                },
+                "last_changed": "2021-11-18T19:33:19.015866+00:00",
+                "last_updated": "2021-11-18T19:33:19.015866+00:00",
+                "context": {
+                    "id": "2961ea1d303c49fd12f2ffa8dbee4aac",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.daddios_iphone",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "battery_level": 62,
+                    "latitude": 37.639892578125,
+                    "longitude": -77.7993709689371,
+                    "gps_accuracy": 7,
+                    "altitude": 92.36724090576172,
+                    "vertical_accuracy": 4,
+                    "friendly_name": "daddio\u2019s iPhone"
+                },
+                "last_changed": "2021-11-18T19:33:19.022352+00:00",
+                "last_updated": "2021-11-18T19:33:19.022352+00:00",
+                "context": {
+                    "id": "6c42878c29cfe61c69495ee70253cc71",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.iphone",
+                "state": "not_home",
+                "attributes": {
+                    "source_type": "gps",
+                    "battery_level": 30,
+                    "latitude": 37.583984375,
+                    "longitude": -77.50971296760092,
+                    "gps_accuracy": 5,
+                    "altitude": 75.4549570735544,
+                    "course": 37,
+                    "speed": 12,
+                    "vertical_accuracy": 2,
+                    "friendly_name": "IV\u2019s phone"
+                },
+                "last_changed": "2021-11-18T21:30:05.925971+00:00",
+                "last_updated": "2021-11-18T21:30:05.925971+00:00",
+                "context": {
+                    "id": "cf73207e1fe71ce4be9d8406ed3d1221",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.front_porch_lights_2",
+                "state": "off",
+                "attributes": {
+                    "supported_color_modes": [
+                        "onoff"
+                    ],
+                    "friendly_name": "Lights Front Porch",
+                    "supported_features": 0
+                },
+                "last_changed": "2021-11-18T19:33:19.058508+00:00",
+                "last_updated": "2021-11-18T19:33:19.058508+00:00",
+                "context": {
+                    "id": "07b049dddb914eeb3da7f00e253ede3a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.living_room_light",
+                "state": "on",
+                "attributes": {
+                    "supported_color_modes": [
+                        "onoff"
+                    ],
+                    "color_mode": "onoff",
+                    "friendly_name": "Living Room Light",
+                    "supported_features": 40
+                },
+                "last_changed": "2021-11-18T19:33:19.590993+00:00",
+                "last_updated": "2021-11-18T19:33:19.590993+00:00",
+                "context": {
+                    "id": "4baeb527ff9c11fba5461855be658be8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.alison_bedside_light",
+                "state": "off",
+                "attributes": {
+                    "supported_color_modes": [
+                        "onoff"
+                    ],
+                    "friendly_name": "Alison Bedside Light",
+                    "supported_features": 40
+                },
+                "last_changed": "2021-11-18T19:33:19.234914+00:00",
+                "last_updated": "2021-11-18T19:33:19.234914+00:00",
+                "context": {
+                    "id": "0d18610e9a676bed8118d626b1905745",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.garage_side_light_blue_led",
+                "state": "off",
+                "attributes": {
+                    "supported_color_modes": [
+                        "brightness"
+                    ],
+                    "friendly_name": "Garage Side Light Blue LED",
+                    "supported_features": 41
+                },
+                "last_changed": "2021-11-18T21:30:54.346078+00:00",
+                "last_updated": "2021-11-18T21:30:54.346078+00:00",
+                "context": {
+                    "id": "d83fbfcd22c756d087b5cb422a3fa306",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.garage_side_light_relay_1",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Garage Side Light Relay 1"
+                },
+                "last_changed": "2021-11-18T21:30:54.346603+00:00",
+                "last_updated": "2021-11-18T21:30:54.346603+00:00",
+                "context": {
+                    "id": "7da7abbe4f9f01fc28e9727d4d857348",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.garage_side_light_relay_2",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Garage Side Light Relay 2"
+                },
+                "last_changed": "2021-11-18T21:30:54.346768+00:00",
+                "last_updated": "2021-11-18T21:30:54.346768+00:00",
+                "context": {
+                    "id": "d12a5eb46a5d751f9344ab33e1719998",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.bobby_bedside_light_2",
+                "state": "off",
+                "attributes": {
+                    "supported_color_modes": [
+                        "onoff"
+                    ],
+                    "friendly_name": "Bobby Bedside Light",
+                    "supported_features": 40
+                },
+                "last_changed": "2021-11-18T19:33:19.413760+00:00",
+                "last_updated": "2021-11-18T19:33:19.413760+00:00",
+                "context": {
+                    "id": "d30e3b7c1643c602071dfc7bc4c7e4ae",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.apple_pi",
+                "state": "on",
+                "attributes": {
+                    "power": "3.08",
+                    "switch": "b4:fb:e4:55:72:57",
+                    "port": 12,
+                    "poe_mode": "auto",
+                    "friendly_name": "apple-pi"
+                },
+                "last_changed": "2021-11-18T19:33:21.134360+00:00",
+                "last_updated": "2021-11-18T21:33:33.760941+00:00",
+                "context": {
+                    "id": "04609c9e8a3a1fda6f6c5bbee9477e34",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.cherry_pi",
+                "state": "on",
+                "attributes": {
+                    "power": "3.31",
+                    "switch": "b4:fb:e4:55:72:57",
+                    "port": 2,
+                    "poe_mode": "auto",
+                    "friendly_name": "cherry pi"
+                },
+                "last_changed": "2021-11-18T19:33:21.134945+00:00",
+                "last_updated": "2021-11-18T21:33:33.760482+00:00",
+                "context": {
+                    "id": "578559dd10a736a690ba1cd1d6c582e1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.is_the_garage_door_open_at_night_checks_every_30_minutes",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-17T03:15:00.005124+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Is the Garage door Open at night - Checks every 30 minutes."
+                },
+                "last_changed": "2021-11-18T21:31:49.566935+00:00",
+                "last_updated": "2021-11-18T21:31:49.566935+00:00",
+                "context": {
+                    "id": "c79ec0ffa3d2ad09c1884b8b893d1a13",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.action_close_open_garage_door",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-05-22T16:12:42.590394+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Action Close/Open Garage Door"
+                },
+                "last_changed": "2021-11-18T21:31:49.567480+00:00",
+                "last_updated": "2021-11-18T21:31:49.567480+00:00",
+                "context": {
+                    "id": "c4fc3621416f500ba39b2bb0e9fcbb6b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.check_if_the_garage_door_has_been_open_for_more_than_10_minutes",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1637270011192",
+                    "friendly_name": "Check if the garage door has been open for more than 10 minutes"
+                },
+                "last_changed": "2021-11-18T21:31:49.567860+00:00",
+                "last_updated": "2021-11-18T21:31:49.567860+00:00",
+                "context": {
+                    "id": "9321acd8aee7cf1e2cfa8463bdda4861",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.is_the_garage_door_open_while_away_checks_every_5_minutes_after_we_drive_away",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-14T18:52:35.305764+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Is the Garage door Open while away? - Checks every 5 minutes after we drive away."
+                },
+                "last_changed": "2021-11-18T21:31:49.568290+00:00",
+                "last_updated": "2021-11-18T21:31:49.568290+00:00",
+                "context": {
+                    "id": "3598a0936c7ee65c4739ede0458c2e62",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.open_door_when_we_arrive",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-18T17:52:43.726717+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Open door when we arrive"
+                },
+                "last_changed": "2021-11-18T21:31:49.568643+00:00",
+                "last_updated": "2021-11-18T21:31:49.568643+00:00",
+                "context": {
+                    "id": "eabacb83f9512c9031d39fff01b22f31",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.all_outside_lights_off_with_one_switch",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-18T21:30:54.363578+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "All outside lights OFF with one switch"
+                },
+                "last_changed": "2021-11-18T21:31:49.569194+00:00",
+                "last_updated": "2021-11-18T21:31:49.569194+00:00",
+                "context": {
+                    "id": "058a4381861c7c6afaacda391f718302",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.all_outside_lights_on_with_one_switch",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-18T04:51:51.422456+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "All outside lights ON with one switch"
+                },
+                "last_changed": "2021-11-18T21:31:49.569569+00:00",
+                "last_updated": "2021-11-18T21:31:49.569569+00:00",
+                "context": {
+                    "id": "4ccc3393bc1b94b639f2df82f2e6e00e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_leds_off_after_30_minutes",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-17T03:34:43.512147+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Turn LEDs off after 30 minutes"
+                },
+                "last_changed": "2021-11-18T21:31:49.569884+00:00",
+                "last_updated": "2021-11-18T21:31:49.569884+00:00",
+                "context": {
+                    "id": "350394d2165d9022d67d426b5e363279",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.inside_lights_off_during_the_daytime",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-30T21:58:32.996938+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Inside lights off during the daytime"
+                },
+                "last_changed": "2021-11-18T21:31:49.570276+00:00",
+                "last_updated": "2021-11-18T21:31:49.570276+00:00",
+                "context": {
+                    "id": "b0609c82a0936391dd3283c9b4a697f2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_lights_off_when_it_gets_light",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-12T12:00:00.003294+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Turn lights off when it gets light"
+                },
+                "last_changed": "2021-11-18T21:31:49.570609+00:00",
+                "last_updated": "2021-11-18T21:31:49.570609+00:00",
+                "context": {
+                    "id": "d73bdcfab6f9c81e7a1de9556d2876fe",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_lights_on_when_garage_door_opens_at_night",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-18T04:07:32.403568+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Turn lights on when garage door opens at night"
+                },
+                "last_changed": "2021-11-18T21:31:49.570977+00:00",
+                "last_updated": "2021-11-18T21:31:49.570977+00:00",
+                "context": {
+                    "id": "d45c4af6a0fecb333b2961c8b95a2623",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_lights_on_when_it_gets_dark",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-17T22:15:00.003086+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Turn lights on when it gets dark"
+                },
+                "last_changed": "2021-11-18T21:31:49.571388+00:00",
+                "last_updated": "2021-11-18T21:31:49.571388+00:00",
+                "context": {
+                    "id": "56f18002e49b5c154446976953b82852",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_off_outside_lights_45_minutes_after_trigger_after_midnight",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-16T06:32:32.124371+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Turn off outside lights 45 minutes after trigger after midnight"
+                },
+                "last_changed": "2021-11-18T21:31:49.571716+00:00",
+                "last_updated": "2021-11-18T21:31:49.571716+00:00",
+                "context": {
+                    "id": "b36cbfdc9def05a38c367ee68777c972",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.outside_lights_off_at_midnight",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-18T05:00:00.003429+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Outside lights off at midnight"
+                },
+                "last_changed": "2021-11-18T21:31:49.572079+00:00",
+                "last_updated": "2021-11-18T21:31:49.572079+00:00",
+                "context": {
+                    "id": "f5b9d471e9feb1a48770267dd150bc22",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.camera_stream_with_motion",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2019-11-08T05:30:28.189032+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Camera Stream with Motion"
+                },
+                "last_changed": "2021-11-18T21:31:49.572446+00:00",
+                "last_updated": "2021-11-18T21:31:49.572446+00:00",
+                "context": {
+                    "id": "ee4ffb7dc7c281f4b4a3778080943bfa",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:33:51.151705+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.is_the_garage_door_open_at_night_checks_every_30_minutes_2",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Is the Garage door Open at night - Checks every 30 minutes."
+                },
+                "last_changed": "2021-11-18T21:15:36.213355+00:00",
+                "last_updated": "2021-11-18T21:15:36.213355+00:00",
+                "context": {
+                    "id": "274d9a131462f97c75edf2a5583bda50",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:18:16.303618+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.announce_garage_door_open_for_10_minutes",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-11-18T21:30:25.179721+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1637270529869",
+                    "friendly_name": "Announce garage door open for 10 minutes"
+                },
+                "last_changed": "2021-11-18T21:29:16.977892+00:00",
+                "last_updated": "2021-11-18T21:30:25.194435+00:00",
+                "context": {
+                    "id": "ef96d4becb07db517c79d1ef3da97313",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-18T21:31:49.515589+00:00"
+        }
+    ]
+}

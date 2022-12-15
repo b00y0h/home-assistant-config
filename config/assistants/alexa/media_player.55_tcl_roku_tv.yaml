@@ -1,0 +1,11 @@
+---
+# Entity configuration for Google Assistant.
+#
+# I use this to customize how the device shows up in Google Assistant.
+#
+# https://www.home-assistant.io/integrations/google_assistant/#entity_config
+#
+media_player.55_tcl_roku_tv:
+  name: Upstairs TV
+  description: Roku TV on 1st floor
+  display_categories: TV

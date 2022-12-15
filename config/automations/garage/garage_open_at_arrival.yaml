@@ -2,20 +2,26 @@
 ## Garage Door Automations Open Door When We Arrive      ##
 ###########################################################
 
-alias: 'Open door when we arrive'
+alias: "Open door when we arrive"
 trigger:
   - platform: state
     entity_id: device_tracker.life360_alison
-    to: 'home'
+    to: "home"
   - platform: state
     entity_id: device_tracker.life360_bobby
-    to: 'home'
+    to: "home"
   - platform: state
     entity_id: device_tracker.life360_alison
-    to: 'Home'
+    to: "Home"
   - platform: state
     entity_id: device_tracker.life360_bobby
-    to: 'Home'
+    to: "Home"
+  - platform: state
+    entity_id: device_tracker.life360_iv_smith
+    to: "Home"
+  - platform: state
+    entity_id: device_tracker.life360_iv_smith
+    to: "Home"
 
 condition:
   condition: state

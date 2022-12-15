@@ -4,5 +4,5 @@
 
 # https://www.home-assistant.io/components/roku/
 
-roku:
-  - host: 192.168.107.2
+# roku:
+#   host: 192.168.107.79

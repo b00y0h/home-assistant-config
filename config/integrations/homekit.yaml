@@ -6,9 +6,7 @@
 #
 homekit:
   # Start the HomeKit Server automatically.
-  # I have a Z-Wave network, but since Home Assistant restores entities,
-  # we don't have to wait for it (like we did in the past).
-  auto_start: true
+  # auto_start: true
   # safe_mode: true
   # The default: "Home Assistant Bridge", I like it to be just "Home Assistant"
   name: Home Assistant
@@ -32,20 +30,20 @@ homekit:
       - light.front_porch_lights
     # include_entities:
     #   - light.emma_bedside_light
-      # - climate.bedroom_lilly
-      # - climate.bedroom_master
-      # - climate.living_room
-      # - fan.attic_ventilation
-      # - light.bathroom
-      # - light.bedroom_lilly_bedside
-      # - light.bedroom_master_ceiling
-      # - light.garden_wall
-      # - light.kitchen_ceiling
-      # - light.kitchen_cupboard
-      # - light.living_room_bartop
-      # - light.living_room_spotlight
-      # - light.living_room_television
-      # - light.living_room_window
-      # - light.office_desk
-      # - light.office_window
-      # - vacuum.living_room
+    # - climate.bedroom_lilly
+    # - climate.bedroom_master
+    # - climate.living_room
+    # - fan.attic_ventilation
+    # - light.bathroom
+    # - light.bedroom_lilly_bedside
+    # - light.bedroom_master_ceiling
+    # - light.garden_wall
+    # - light.kitchen_ceiling
+    # - light.kitchen_cupboard
+    # - light.living_room_bartop
+    # - light.living_room_spotlight
+    # - light.living_room_television
+    # - light.living_room_window
+    # - light.office_desk
+    # - light.office_window
+    # - vacuum.living_room

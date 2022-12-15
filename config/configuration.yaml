@@ -34,20 +34,55 @@ homeassistant:
 
   # Load packages
   packages: !include_dir_named integrations
-  # auth_providers:
-  #   - type: trusted_networks
-  #     trusted_networks:
-  #       - 192.168.107.1/24
-  #       - 192.168.20.1/24
-  #       - 192.168.1.1/24
+
+default_config:
+# http:
+#   use_x_forwarded_for: true
+#   trusted_proxies:
+#     - 127.0.0.1
+#     - 192.168.1.4
+
+# auth_providers:
+#   - type: trusted_networks
+#     trusted_networks:
+#       - 192.168.107.1/24
+#       - 192.168.20.1/24
+#       - 192.168.1.1/24
 # hacs has a bug when splitting the file
 # hacs:
 #   token: !secret hacs_access_token
+# handled in the UI now
+
 stream:
 
-camera:
-  - platform: generic
-    name: Front Porch
-    still_image_url: http://192.168.10.31/snap.jpeg
-    stream_source: rtsp://192.168.1.24:7447/RM3id9spMoyQUeWJ
-    verify_ssl: false
+input_text:
+  alexa_actionable_notification:
+    name: Alexa Actionable Notification Holder
+    max: 255
+    initial: '{"text": "This is a test of the alexa actions custom skill. Did it work?", "event": "actionable.skill.test"}'
+# camera:
+#   - platform: generic
+#     name: Front Porch
+#     still_image_url: http://192.168.10.31/snap.jpeg
+#     stream_source: rtsp://192.168.1.24:7447/RM3id9spMoyQUeWJ
+#     verify_ssl: false
+# - platform: generic
+#   name: Wyze Garaage Cam
+#   still_image_url: http://192.168.107.78/jpg
+#   stream_source: rtsp://admin:agx195@192.168.107.78/live
+#   verify_ssl: false
+# automation:
+#   - alias: "linked switches"
+#     trigger:
+#       - platform: state
+#         entity_id: switch.garage_side_light_relay_1, light.back_flood_left, light.front_porch_lights_2, light.lights_driveway_near_road
+#     action:
+#       - service_template: homeassistant.turn_{{trigger.to_state.state}}
+#         data_template:
+#           entity_id: >
+#             "{{ expand('group.outside_lights')
+#             | rejectattr('state', 'eq', trigger.to_state.state)
+#             | map(attribute='entity_id')
+#             | list | join(', ') }}"
+# - service: homeassistant.turn_off
+#   entity_id: group.outside_lights

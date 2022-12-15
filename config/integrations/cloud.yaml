@@ -19,6 +19,7 @@ cloud:
       include_domains:
         - light
         - cover
+        - media
       exclude_entities:
         - light.garage_side_light_blue_led
         - light.sonoff_t1_2_gang_blue_led
@@ -36,6 +37,7 @@ cloud:
       include_domains:
         - light
         - cover
+        - media
       exclude_entities:
         - light.garage_side_light_blue_led
         - light.sonoff_t1_2_gang_blue_led

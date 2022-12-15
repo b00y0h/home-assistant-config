@@ -9,5 +9,5 @@
 #
 # script: !include_dir_merge_named ../../scripts
 
-script: !include scripts.yaml
-script extra: !include_dir_merge_named ../../scripts
+script: !include ../scripts.yaml
+script extra: !include_dir_merge_named ../scripts

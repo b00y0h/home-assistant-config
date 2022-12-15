@@ -1,6 +1,6 @@
-All Lights:
+all_lights:
   name: All Lights
-  view: false
   entities:
     - group.indoor_lights
     - group.outside_lights
+    - group.basement_lights

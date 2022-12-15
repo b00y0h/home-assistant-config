@@ -1,7 +1,9 @@
-#mqtt
+# #mqtt
 mqtt:
+  cover: !include_dir_list ../entities/mqtt/covers
+  light: !include_dir_list ../entities/mqtt/lights
   # broker: core-mosquitto
-  broker: !secret http_server_host
-  username: !secret mqtt_username
-  password: !secret mqtt_password
-  discovery: true
+  # broker: !secret http_server_host
+  # username: !secret mqtt_username
+  # password: !secret mqtt_password
+  # discovery: true

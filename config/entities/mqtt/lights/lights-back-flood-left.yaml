@@ -1,0 +1,10 @@
+# platform: mqtt
+name: "Lights Back Flood Left"
+state_topic: "shellies/shelly1-2C0AE9/relay/0"
+command_topic: "shellies/shelly1-2C0AE9/relay/0/command"
+payload_on: "on"
+payload_off: "off"
+payload_available: "Online"
+payload_not_available: "Offline"
+retain: false
+unique_id: 2C0AE9 #mac address minus alpha

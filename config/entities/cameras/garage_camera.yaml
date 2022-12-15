@@ -1,0 +1,5 @@
+platform: generic
+name: Wyze Garage Cam
+still_image_url: http://192.168.107.78/jpg
+stream_source: rtsp://admin:agx195@192.168.107.78/live
+verify_ssl: false

@@ -1,30 +1,36 @@
 """Class for python_scripts in HACS."""
-from integrationhelper import Logger
+from __future__ import annotations
 
-from .repository import HacsRepository
-from ..hacsbase.exceptions import HacsException
-from ..helpers.information import find_file_name
+from typing import TYPE_CHECKING
+
+from ..enums import HacsCategory, HacsDispatchEvent
+from ..exceptions import HacsException
+from ..utils.decorator import concurrent
+from .base import HacsRepository
+
+if TYPE_CHECKING:
+    from ..base import HacsBase
 
 
-class HacsPythonScript(HacsRepository):
+class HacsPythonScriptRepository(HacsRepository):
     """python_scripts in HACS."""
 
     category = "python_script"
 
-    def __init__(self, full_name):
+    def __init__(self, hacs: HacsBase, full_name: str):
         """Initialize."""
-        super().__init__()
+        super().__init__(hacs=hacs)
         self.data.full_name = full_name
-        self.data.category = "python_script"
+        self.data.full_name_lower = full_name.lower()
+        self.data.category = HacsCategory.PYTHON_SCRIPT
         self.content.path.remote = "python_scripts"
         self.content.path.local = self.localpath
         self.content.single = True
-        self.logger = Logger(f"hacs.repository.{self.data.category}.{full_name}")
 
     @property
     def localpath(self):
         """Return localpath."""
-        return f"{self.hacs.system.config_path}/python_scripts"
+        return f"{self.hacs.core.config_path}/python_scripts"
 
     async def validate_repository(self):
         """Validate."""
@@ -32,14 +38,12 @@ class HacsPythonScript(HacsRepository):
         await self.common_validate()
 
         # Custom step 1: Validate content.
-        if self.data.content_in_root:
+        if self.repository_manifest.content_in_root:
             self.content.path.remote = ""
 
         compliant = False
         for treefile in self.treefiles:
-            if treefile.startswith(f"{self.content.path.remote}") and treefile.endswith(
-                ".py"
-            ):
+            if treefile.startswith(f"{self.content.path.remote}") and treefile.endswith(".py"):
                 compliant = True
                 break
         if not compliant:
@@ -50,28 +54,28 @@ class HacsPythonScript(HacsRepository):
         # Handle potential errors
         if self.validate.errors:
             for error in self.validate.errors:
-                if not self.hacs.system.status.startup:
-                    self.logger.error(error)
+                if not self.hacs.status.startup:
+                    self.logger.error("%s %s", self.string, error)
         return self.validate.success
 
     async def async_post_registration(self):
         """Registration."""
         # Set name
-        find_file_name(self)
+        self.update_filenames()
 
-    async def update_repository(self, ignore_issues=False):
+    @concurrent(concurrenttasks=10, backoff_time=5)
+    async def update_repository(self, ignore_issues=False, force=False):
         """Update."""
-        await self.common_update(ignore_issues)
+        if not await self.common_update(ignore_issues, force) and not force:
+            return
 
         # Get python_script objects.
-        if self.data.content_in_root:
+        if self.repository_manifest.content_in_root:
             self.content.path.remote = ""
 
         compliant = False
         for treefile in self.treefiles:
-            if treefile.startswith(f"{self.content.path.remote}") and treefile.endswith(
-                ".py"
-            ):
+            if treefile.startswith(f"{self.content.path.remote}") and treefile.endswith(".py"):
                 compliant = True
                 break
         if not compliant:
@@ -80,4 +84,24 @@ class HacsPythonScript(HacsRepository):
             )
 
         # Update name
-        find_file_name(self)
+        self.update_filenames()
+
+        # Signal entities to refresh
+        if self.data.installed:
+            self.hacs.async_dispatch(
+                HacsDispatchEvent.REPOSITORY,
+                {
+                    "id": 1337,
+                    "action": "update",
+                    "repository": self.data.full_name,
+                    "repository_id": self.data.id,
+                },
+            )
+
+    def update_filenames(self) -> None:
+        """Get the filename to target."""
+        for treefile in self.tree:
+            if treefile.full_path.startswith(
+                self.content.path.remote
+            ) and treefile.full_path.endswith(".py"):
+                self.data.file_name = treefile.filename

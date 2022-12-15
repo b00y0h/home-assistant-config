@@ -1,0 +1,6 @@
+---
+name: IV
+id: !secret user_id_iv
+user_id: !secret user_id_iv
+device_trackers:
+  - device_tracker.life360_iv_smith

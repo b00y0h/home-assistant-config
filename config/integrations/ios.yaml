@@ -1,0 +1,10 @@
+ios:
+  actions:
+    - name: openCloseGarageDoor
+      background_color: "#000000"
+      label:
+        text: "Garage"
+        color: "#ff0000"
+      icon:
+        icon: garage
+        color: "#ffffff"

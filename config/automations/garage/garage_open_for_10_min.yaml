@@ -1,0 +1,24 @@
+##########################################
+## Garage Door Automations              ##
+##########################################
+
+# id: "1637270011192322"
+# alias: "YAML - Check if the garage door has been open for more than 10 minutes"
+# description: ""
+# trigger:
+#   - platform: state
+#     entity_id: cover.garage_door
+#     for:
+#       hours: 0
+#       minutes: 10
+#       seconds: 0
+#       milliseconds: 0
+#     attribute: device_class
+#     to: open
+# condition: []
+# action:
+#   - service: tts.google_translate_say
+#     data:
+#       entity_id: media_player.master_display
+#       message: The garage door has been open for more than 10 minutes
+# mode: single
